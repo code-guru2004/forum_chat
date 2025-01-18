@@ -13,7 +13,7 @@ export async function POST({request}) {
   //   console.log(token);
   console.log("fdgfg");
   
-    const body = await request.json;
+    const body = await request.json();
     console.log(body);
     
   return Response.json({msg:"Hello"})
