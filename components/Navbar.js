@@ -7,7 +7,7 @@ import { useState } from 'react';
 
 const Navbar = () => {
   const user = useUser();
-  console.log(user.user?.id);
+  console.log(user.user);
   
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 

@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 function Footer() {
   return (
-    <footer className="bg-gray-800 text-white py-6">
+    <footer className="bg-gray-800 text-white py-4">
       <div className="container mx-auto flex flex-col items-center justify-center space-y-4">
         <p className="text-center">&copy; {new Date().getFullYear()} Chat App. All rights reserved.</p>
         <div className="flex space-x-4">

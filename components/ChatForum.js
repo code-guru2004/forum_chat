@@ -1,28 +1,38 @@
-'use client'
+"use client";
 
-import { useState, useEffect } from 'react';
+import React from "react";
+import { useState, useEffect } from "react";
+import {
+  useCreateChatClient,
+  Chat,
+  Channel,
+  ChannelHeader,
+  MessageInput,
+  MessageList,
+  Thread,
+  Window,
+} from "stream-chat-react";
 
-import { useCreateChatClient, Chat, Channel, ChannelHeader, MessageInput, MessageList, Thread, Window } from 'stream-chat-react';
+import "stream-chat-react/dist/css/v2/index.css";
 
-import 'stream-chat-react/dist/css/v2/index.css';
+function ChatForum({ slug, clerkUSer }) {
 
-const apiKey = 'h8n6umc8an99';
-const userId = 'user_2rkzjuQB9KJIyM96XYEK4IEM9tb';
-const userName = 'Nayan';
-const userToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoidXNlcl8ycmt6anVRQjlLSkl5TTk2WFlFSzRJRU05dGIifQ.OeJ8Zn0bLS6dtYf7yfp7UPZCf9O0hsCMV_1lfh1kJR0';
+  const apiKey = "h8n6umc8an99";
+  const userId = clerkUSer.id;
+  const userName = clerkUSer.name;
+  const userToken = clerkUSer.token;
 
-const user = {
-  id: userId,
-  name: userName,
-  image: `https://getstream.io/random_png/?name=${userName}`,
-};
+  const user = {
+    id: userId,
+    name: userName,
+    image: clerkUSer.image,
+  };
 
-function capitalizeFirstLetter(string) {
+  function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
   }
 
-const ChatForum = ({slug,img}) => {
-  const [channel, setChannel] = useState();
+   const [channel, setChannel] = useState();
   const client = useCreateChatClient({
     apiKey,
     tokenOrProvider: userToken,
@@ -39,6 +49,7 @@ const ChatForum = ({slug,img}) => {
     });
 
     setChannel(channel);
+    
   }, [client]);
 
   if (!client) return <div>Setting up client & connection...</div>;
@@ -55,6 +66,8 @@ const ChatForum = ({slug,img}) => {
     </Channel>
   </Chat>
   );
-};
+
+}
 
 export default ChatForum;
+ 

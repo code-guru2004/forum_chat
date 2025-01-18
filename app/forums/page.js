@@ -10,14 +10,14 @@ const topics = [
     img: "/python.png",
     description:
       "Let's discuss about Python, a versatile and beginner-friendly language.",
-    slug: "python-discuss",
+    slug: "python-discuss-new",
   },
   {
     id: 2,
     text: "JavaScript",
     img: "/js.jpg",
     description: "Explore the world of JavaScript, the language of the web.",
-    slug: "javascript-discuss",
+    slug: "javascript-discuss-new",
   },
   {
     id: 3,
@@ -25,7 +25,7 @@ const topics = [
     img: "/react.png",
     description:
       "Learn how to build dynamic and interactive user interfaces with React.",
-    slug: "react-discuss",
+    slug: "react-discuss-new",
   },
   {
     id: 4,
@@ -33,15 +33,30 @@ const topics = [
     img: "/node.jpg",
     description:
       "Build fast and scalable server-side applications with Node.js.",
-    slug: "nodejs-discuss",
+    slug: "nodejs-discuss-new",
   },
   {
     id: 5,
     text: "SQL",
     img: "/sql.jpg",
     description: "Learn to work with relational databases using SQL.",
-    slug: "sql-discuss",
+    slug: "sql-discuss-new",
   },
+  {
+    id: 6,
+    text: "HETC🙂",
+    img: "/hetc.png",
+    description: "Hooghly Engineering and Technology College",
+    slug: "hetc",
+  },
+  {
+    id: 7,
+    text: "The Boyz",
+    img: "/theboyz.jpg",
+    description: "Only For Chutiya Friends🫂. No Girls👧🏻 allowed",
+    slug: "the-Boyz-01",
+  },
+  
 ];
 
 function Forums() {
@@ -51,7 +66,7 @@ function Forums() {
         Discussion Forums
       </h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 items-center">
         {topics.length > 0 &&
           topics.map((topic) => (
             <div
@@ -63,7 +78,7 @@ function Forums() {
                 width={74}
                 height={74}
                 alt={topic.text}
-                className="rounded-full mx-auto p-2 border-[1px]"
+                className="rounded-full mx-auto p-2 border-[1px] object-cover"
               />
               <h2 className="text-2xl text-center py-2">{topic.text}</h2>
               <p className="px-3 text-center text-slate-700 cursor-none">

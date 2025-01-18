@@ -1,10 +1,10 @@
 
-import Navbar from "@/components/Navbar";
+
 import Link from "next/link";
 
 export const metadata = {
   title: 'Forum.io',
-  description: 'Welcome to Forum.io. A fast,reliable,convinient chat app accross the world',
+  description: 'A modern chat platform designed for seamless and intuitive communication, bringing people closer together.',
 }
 
 
