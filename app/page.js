@@ -29,7 +29,7 @@ export default function Home() {
           {/* Call to Action */}
           <div className="mt-8 flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6">
   <Link 
-    href="/signup" 
+    href="/" 
     className="px-8 py-3 text-lg font-medium bg-white text-blue-600 rounded-lg shadow-lg hover:bg-gray-100 transition duration-300"
   >
     Get Started
