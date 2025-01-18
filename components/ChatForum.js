@@ -15,6 +15,7 @@ import {
 
 import "stream-chat-react/dist/css/v2/index.css";
 
+
 function ChatForum({ slug, clerkUSer }) {
 
   const apiKey = "h8n6umc8an99";

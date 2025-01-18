@@ -2,6 +2,7 @@
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 import Link from 'next/link';
+import ScrollToTop from "./ScrollToTop";
 
 
 function Footer() {
@@ -42,7 +43,9 @@ function Footer() {
                 >
                   <FaLinkedin className="h-6 w-6" />
                 </a>
+                
         </div>
+       
       </div>
     </footer>
   );

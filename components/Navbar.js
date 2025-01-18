@@ -2,6 +2,8 @@
 
 
 import { UserButton, useUser } from '@clerk/nextjs';
+import { SiChatwoot } from "react-icons/si";
+
 import Link from 'next/link';
 import { useState } from 'react';
 
@@ -19,9 +21,9 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-1 flex items-center"> 
-            <Link href="/" className="flex items-center"> 
-              
-              <span className="text-white font-semibold">Forum.io</span> 
+            <Link href="/" className="flex items-center gap-1"> 
+              <SiChatwoot  className='w-10 text-3xl text-red-600'/>
+              <h1 className="text-white font-semibold">Forum.io</h1> 
             </Link>
           </div>
 
