@@ -55,7 +55,7 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section className="bg-gray-50 py-16">
+      <section className="bg-gray-50 py-16 mb-20">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold mb-6 text-gray-800">
             Why Choose Us?

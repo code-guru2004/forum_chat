@@ -40,7 +40,7 @@ const topics = [
     text: "Nextjs",
     img: "/nextjs.png",
     description: "Next.js: Delivering exceptional user experiences with ease.",
-    slug: "nextjs",
+    slug: "nextjs-Discuss",
   },
   {
     id: 5,

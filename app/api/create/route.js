@@ -30,7 +30,7 @@ export async function POST(request) {
     return string.charAt(0).toUpperCase() + string.slice(1);
   }
 
-  const slugs = ["python-discuss-new", "javascript-discuss-new", "react-discuss-new", "nodejs-discuss-new","nextjs", "sql-discuss-new","hetc","the-Boyz-01"] ;
+  const slugs = ["python-discuss-new", "javascript-discuss-new", "react-discuss-new", "nodejs-discuss-new","nextjs-discuss", "sql-discuss-new","hetc","the-Boyz-01"] ;
   slugs.forEach(async (item)=>{
     const channel = serverClient.channel('messaging', item, {
       image: 'https://getstream.io/random_png/?name=react',
