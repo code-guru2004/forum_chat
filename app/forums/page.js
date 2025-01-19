@@ -36,6 +36,13 @@ const topics = [
     slug: "nodejs-discuss-new",
   },
   {
+    id: 8,
+    text: "Nextjs",
+    img: "/nextjs.png",
+    description: "Next.js: Delivering exceptional user experiences with ease.",
+    slug: "nextjs",
+  },
+  {
     id: 5,
     text: "SQL",
     img: "/sql.jpg",
