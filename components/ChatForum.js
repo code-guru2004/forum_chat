@@ -56,7 +56,7 @@ function ChatForum({ slug, clerkUSer }) {
   if (!client) return <div>Setting up client & connection...</div>;
 
   return (
-    <div className="h-[76vh] md:h-[79vh] lg:h-[79vh]  mb-2">
+    <div className="h-[76vh] md:h-[79vh] lg:h-[78vh]  mb-2">
 
     <Chat client={client}>
     <Channel channel={channel}>
