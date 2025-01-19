@@ -6,6 +6,7 @@ import { SiChatwoot } from "react-icons/si";
 
 import Link from 'next/link';
 import { useState } from 'react';
+import { Version } from './version';
 
 const Navbar = () => {
   const user = useUser();
@@ -43,12 +44,7 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/chats"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  Chats
-                </Link>
+                <Version/>
               </li>
               <li>
                 <UserButton/>

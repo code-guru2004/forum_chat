@@ -7,7 +7,7 @@ import ScrollToTop from "./ScrollToTop";
 
 function Footer() {
   return (
-    <footer className="bg-gray-800 text-white py-4">
+    <footer className="bg-gray-800 text-white py-4 bottom-0 w-full fixed">
       <div className="container mx-auto flex flex-col items-center justify-center space-y-4">
         <p className="text-center">&copy; {new Date().getFullYear()} Chat App. All rights reserved.</p>
         <div className="flex space-x-4">
